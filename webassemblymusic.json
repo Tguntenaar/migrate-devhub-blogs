@@ -1,0 +1,22 @@
+[{
+  "handle": "webassemblymusic",
+  "data": {
+    "blog": {
+      "title-na45iw": {
+        "": "# test",
+        "metadata": {
+          "title": "Title",
+          "publishedAt": "2024-05-22",
+          "status": "DRAFT",
+          "subtitle": "subtitle",
+          "description": "Description",
+          "author": "thomasguntenaar.near",
+          "category": "news",
+          "updatedAt": "2024-05-22",
+          "createdAt": "2024-05-22",
+          "communityAddonId": "g1709r"
+        }
+      }
+    }
+  }
+}]

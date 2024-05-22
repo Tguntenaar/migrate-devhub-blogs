@@ -1,0 +1,93 @@
+[{
+    "handle": "devhub-test",
+    "data": {
+      "blog": {
+        "test-blog-1993": {
+          "": "## Hello this is content\n\n### And this is an H3\n\n\nWhere am I?",
+          "metadata": {
+            "title": "Test Blog",
+            "createdAt": "2023-11-03",
+            "updatedAt": "2023-11-03",
+            "publishedAt": "2023-11-03",
+            "status": "DRAFT",
+            "subtitle": "Subtitle for blog",
+            "description": "Describing the blog",
+            "author": "efiz.near",
+            "id": 1993,
+            "category": "blog",
+            "communityAddonId": "blogv2"
+          }
+        }
+      }
+    }
+  },
+  {
+    "handle": "devhub-test",
+    "data": {
+      "blog": {
+        "charlie-worked-with-dragons-in-romania!-1997": {
+          "": "Charlie Weasley was always fond of beats. He could not be more happy when he got the job to transfer Dragons for all these games across the world. Little did he know, that his younger brother Ron would be best friends with the guy who lived, who will one day fight one of these dragons. Read the book to know the rest :P",
+          "metadata": {
+            "title": "Charlie worked with dragons in Romania!",
+            "createdAt": "2023-11-03",
+            "updatedAt": "2023-11-03",
+            "publishedAt": "2023-11-03",
+            "status": "DRAFT",
+            "subtitle": "He enjoyed working there!!",
+            "description": "This is a test blog to check the new test plugin. Let's go go go.",
+            "author": "jass.near",
+            "id": 1997,
+            "category": "blog",
+            "communityAddonId": "blogv2"
+          }
+        }
+      }
+    }
+  },
+  {
+    "handle": "devhub-test",
+    "data": {
+      "blog": {
+        "testing-notification-blog-2309": {
+          "": "Test blog",
+          "metadata": {
+            "title": "Testing Notification Blog",
+            "createdAt": "2024-02-01",
+            "updatedAt": "2024-02-01",
+            "publishedAt": "2024-02-01",
+            "status": "DRAFT",
+            "subtitle": "",
+            "description": "",
+            "author": "megha19.near",
+            "id": "2309",
+            "category": "guide",
+            "communityAddonId": "blogv2"
+          }
+        }
+      }
+    }
+  },
+  {
+    "handle": "devhub-test",
+    "data": {
+      "blog": {
+        "test-blog-by-bo-2953": {
+          "": "For test updating",
+          "metadata": {
+            "title": "Test blog by Bo",
+            "createdAt": "2024-02-02",
+            "updatedAt": "2024-02-02",
+            "publishedAt": "2024-02-02",
+            "status": "DRAFT",
+            "subtitle": "Test update",
+            "description": "Test update",
+            "author": "bo.near",
+            "id": "2953",
+            "category": "guide",
+            "communityAddonId": "blogv2"
+          }
+        }
+      }
+    }
+  }
+]
