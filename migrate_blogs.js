@@ -28,10 +28,7 @@ const objects = JSON.parse(rawData);
 // Iterate over each object in the array
 const runCommands = async () => {
   for (const obj of objects) {
-    if (['testing123', 'devhub-test', 'education',
-
-      'neardevnews' // out of balance on near.social
-    ].includes(obj.handle)) {
+    if (['testing123', 'devhub-test', 'education'].includes(obj.handle)) {
       continue;
     }
 
@@ -76,13 +73,22 @@ const runCommands = async () => {
       'neardevnews near-dev-news-3-3193',
       'neardevnews near-dev-news-12-3230',
       'neardevnews near-dev-news-11-3231',
+      'neardevnews near-dev-news-10-3232',
+      'neardevnews near-dev-news-9-3233',
+      'neardevnews -near-dev-news-7-3235',
+      'neardevnews near-dev-news-6-3237',
+      'neardevnews near-dev-news-8-3238',
       'devrel devhub-at-ethseoul-2024-3241',
       'protocol protocol-work-group-call-8-3272',
       'contract-standards -community-call-may-25th-2023-3273',
       'contract-standards -working-group-call-june-30th-2023-3274',
       'documentation documentation-community-call-8-3281',
       'documentation documentation-community-call-9-3282',
-      'contract-standards contract-standards-wg-call-5-3283'
+      'contract-standards contract-standards-wg-call-5-3283',
+      'zero-knowledge community-call-10-recap-3287',
+      'chain-abstraction chain-abstraction-community-calls-1-3288',
+      'devrel rustling-up-efficiency-serialization-strategies-for-merkle-trees-3289',
+      'protocol protocol-work-group-call-10-3299'
     ]
 
     if (alreadyImported.includes(`${obj.handle} ${Object.keys(obj.data.blog)[0]}`)) {
