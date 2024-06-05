@@ -88,9 +88,18 @@ const runCommands = async () => {
       'zero-knowledge community-call-10-recap-3287',
       'chain-abstraction chain-abstraction-community-calls-1-3288',
       'devrel rustling-up-efficiency-serialization-strategies-for-merkle-trees-3289',
-      'protocol protocol-work-group-call-10-3299'
-    ]
+      'protocol protocol-work-group-call-10-3299',
+      'near-campus claremont-mckenna-college-2480',
+      'near-campus -duke-university-2509',
+      'near-campus boston-university-2481'
+    ];
 
+
+
+    const id = `${obj.handle} ${Object.keys(obj.data.blog)[0]}`;
+    if (!["near-campus boston-university-2481"].includes(id)) {
+      continue;
+    }
     if (alreadyImported.includes(`${obj.handle} ${Object.keys(obj.data.blog)[0]}`)) {
       continue;
     }

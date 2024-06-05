@@ -50,12 +50,14 @@ fs.readFile("posts.json", "utf8", (err, data) => {
   try {
     const inputArray = JSON.parse(data);
     const outputArray = inputArray.map(convertToNewStructure)
-          .filter(entry => Object.keys(entry.data.blog)[0].match(/[^A-Za-z0-9-]+/g))
+          //.filter(entry => Object.keys(entry.data.blog)[0].match(/[^A-Za-z0-9-]+/g))
           .map(entry => {
             const originalKey = Object.keys(entry.data.blog)[0];
             const newKey = originalKey.replace(/[^A-Za-z0-9-]+/g, "-").replace(/\-+/g, "-");
             entry.data.blog[newKey] = entry.data.blog[originalKey];
-            delete entry.data.blog[originalKey];
+            if (originalKey !== newKey) {
+              delete entry.data.blog[originalKey];
+            }
             return entry;
           });
     // const filteredOutput = outputArray.filter(
