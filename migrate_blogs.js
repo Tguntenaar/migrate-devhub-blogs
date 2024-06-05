@@ -106,10 +106,14 @@ const runCommands = async () => {
       'developer-dao near-bounty-booster-3286',
       'devrel resources-2496',
       'devrel near-bounty-booster-program-3021',
-      'devrel running-an-rpc-node-3022'
+      'devrel running-an-rpc-node-3022',
+      'devhub-marketing devhub-livestream-3292',
+      'devhub-marketing devhub-livestream-3294',
+      'devhub-marketing devhub-livestream-3295',
+      'devhub-marketing devhub-livestream-3298'
     ];
 
-    if (obj.handle !== 'devrel') {
+    if (obj.handle !== 'devhub-marketing') {
       continue;
     }
 
