@@ -28,7 +28,7 @@ function convertToNewStructure(input) {
             subtitle: snapshot.subtitle,
             description: snapshot.description || snapshot.subtitle,
             author: input.author_id,
-            id: snapshot.id,
+            id: `${snapshot.id}`,
             category: snapshot?.category || "blog",
             communityAddonId: "blogv2",
           },
@@ -41,7 +41,7 @@ function convertToNewStructure(input) {
 }
 
 // Read input JSON file
-fs.readFile("all_blog_posts.json", "utf8", (err, data) => {
+fs.readFile("posts.json", "utf8", (err, data) => {
   if (err) {
     console.error("Error reading input file:", err);
     return;
@@ -49,11 +49,20 @@ fs.readFile("all_blog_posts.json", "utf8", (err, data) => {
 
   try {
     const inputArray = JSON.parse(data);
-    const outputArray = inputArray.map(convertToNewStructure);
+    const outputArray = inputArray.map(convertToNewStructure)
+          .filter(entry => Object.keys(entry.data.blog)[0].match(/[^A-Za-z0-9-]+/g))
+          .map(entry => {
+            const originalKey = Object.keys(entry.data.blog)[0];
+            const newKey = originalKey.replace(/[^A-Za-z0-9-]+/g, "-").replace(/\-+/g, "-");
+            entry.data.blog[newKey] = entry.data.blog[originalKey];
+            delete entry.data.blog[originalKey];
+            return entry;
+          });
     // const filteredOutput = outputArray.filter(
     //   (item) => item.handle === "devhub-test"
     // );
 
+    
     // Write output JSON file
     fs.writeFile(
       "socialdb-structured.json",
@@ -63,7 +72,7 @@ fs.readFile("all_blog_posts.json", "utf8", (err, data) => {
           console.error("Error writing output file:", err);
           return;
         }
-        console.log("Transformation complete. Output written to output.json");
+        console.log("Transformation complete. Output written to socialdb-structured.json");
       }
     );
   } catch (err) {

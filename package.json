@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "fs": "^0.0.1-security",
+    "near-api-js": "^4.0.2",
     "node-fetch": "^3.3.2"
   }
 }
