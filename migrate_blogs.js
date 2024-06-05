@@ -91,15 +91,32 @@ const runCommands = async () => {
       'protocol protocol-work-group-call-10-3299',
       'near-campus claremont-mckenna-college-2480',
       'near-campus -duke-university-2509',
-      'near-campus boston-university-2481'
+      'near-campus boston-university-2481',
+      'developer-dao devgov-dao-staking-pool-announcement-2015',
+      'developer-dao ways-to-engage-on-devhub-2028',
+      'developer-dao how-to-ideate-on-devhub-2029',
+      'developer-dao near-developer-dao-2032',
+      'developer-dao open-call-for-devdao-paid-contributors-2033',
+      'developer-dao how-to-post-proposals-on-devhub-2035',
+      'developer-dao near-devhub-funding-guidelines-2036',
+      'developer-dao enhancing-devhub-to-help-users-engage-more-easily-2037',
+      'developer-dao enhancing-communities-on-devhub-2038',
+      'developer-dao introducing-community-announcements-2943',
+      'developer-dao devhub-streamlines-funding-3251',
+      'developer-dao near-bounty-booster-3286',
+      'devrel resources-2496',
+      'devrel near-bounty-booster-program-3021',
+      'devrel running-an-rpc-node-3022'
     ];
 
-
-
-    const id = `${obj.handle} ${Object.keys(obj.data.blog)[0]}`;
-    if (!["near-campus boston-university-2481"].includes(id)) {
+    if (obj.handle !== 'devrel') {
       continue;
     }
+
+    /*const id = `${obj.handle} ${Object.keys(obj.data.blog)[0]}`;
+    if (!["near-campus boston-university-2481"].includes(id)) {
+      continue;
+    }*/
     if (alreadyImported.includes(`${obj.handle} ${Object.keys(obj.data.blog)[0]}`)) {
       continue;
     }
