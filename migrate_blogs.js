@@ -65,8 +65,9 @@ const runCommands = async () => {
       'challenges crypto-heroes-marma-j-gaming-challenge-3018',
       'challenges nada-bot-social-challenge-3019',
       'challenges potlock-donation-challenge-3020',
-      'devrel understanding-transactions-on-the-near-protocol-explorer-3034',
+      'challenges deltadisk-nft-3101',
       'challenges harvest-moon-play-to-earn-3040',
+      'devrel understanding-transactions-on-the-near-protocol-explorer-3034',      
       'zero-knowledge community-call-7-recap-3081',
       'zero-knowledge community-call-9-recap-3082',
       'neardevnews near-dev-news-2-3192',
@@ -113,7 +114,7 @@ const runCommands = async () => {
       'devhub-marketing devhub-livestream-3298'
     ];
 
-    if (obj.handle !== 'devhub-marketing') {
+    if (obj.handle !== 'challenges') {
       continue;
     }
 
